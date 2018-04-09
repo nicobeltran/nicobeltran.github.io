@@ -1,0 +1,176 @@
+
+body {
+		margin: 0;
+		background-color: #3C6478;
+	}
+
+h1 {
+		font-family: "Montserrat", "Times New Roman";
+		text-align: center;
+		color: white;
+		font-size: 3em;
+		padding-bottom: 0px;
+	}
+
+h2 {
+		font-family: "Montserrat", "Times New Roman";
+		color: white;
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+h3 {
+		font-family: "Montserrat", "Times New Roman";
+		color: white;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 5px solid white;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio {
+	border:1px solid white;
+}
+
+ul {
+	list-style-type: none;
+    color: white;
+	font-family: "Raleway", "Times New Roman";
+	text-align: center;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+li {
+	margin: 0px;
+	font-family: "Raleway", "Courier New";
+	padding: 0px;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	background: #f3f3f3;
+	border: 1px solid #e7e7e7; 
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+
+nav a {
+	color: #666;
+	font-family: "Montserrat", "Times New Roman";
+	font-size: 1em;
+	/*display: inline-block;*/
+}
+
+nav a.active {
+	font-weight: bold;
+	color: black;
+}
+
+section {
+		padding: 3.5em 1em;
+		margin: auto;
+	}
+
+section.home {
+	padding: 3em 1em;
+	}
+
+section.contact {
+		padding: 5em 4em;
+		margin: auto;
+	}
+
+p {
+		font-family: "Raleway", "Times New Roman";
+		color: white;
+		text-align: center;
+		font-size: 1em;
+}
+
+figcaption {
+	font-family: "Montserrat", "Times New Roman";
+	color: white;
+	text-align: center;
+	font-size: .75em;
+}
+
+a {
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		padding: .5em;
+		font-size: 1em;
+	}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+hr {
+	width: 50%;
+}
+
+@media screen and (min-width: 48em) {
+	section {
+		padding: 2.5em 5em;
+		margin: auto;
+	}
+
+	section.home {
+	padding: 18em 10em;
+	}
+
+	section.contact {
+		padding: 22em 10em;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	a {
+		padding: 1em;
+	}
+
+	section.home {
+		padding: 8.5em 10em;
+
+	}
+
+	section {
+		padding: 2.5em 15em;
+		margin: auto;
+	}
+
+	section.contact {
+		padding: 2.5em 15em;
+		margin: auto;
+	}
+
+	img {
+		max-width: 50%;
+	}
+
+	img.portfolio{
+		max-width: 80%;
+	}
+
+
+}
+
+	
+}
