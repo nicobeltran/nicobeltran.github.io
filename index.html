@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 
+
+	<!-- TO-DO: 
+		- add picture of myself somewhere
+		- add meta tags -->
 	<html>
 		<head>
 			<title> Nico Beltran </title>
 			<meta name="author" content="Nico Beltran">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script type="text/javascript" src="./js/jquery.smooth-scroll.js"></script>
+			<script>
+			$(document).ready(function() {
+					$('aside.nav a').click(function(event) {
+        				event.preventDefault();
+        				var link = this;
+        			$.smoothScroll({
+          				scrollTarget: link.hash
+        				});
+      				});
+      				$('ul.backtotop').click(function(event) {
+        				event.preventDefault();
+        				var link = this;
+        			$.smoothScroll({
+          				scrollTarget: link.hash
+        				});
+      				});
+      			});
+			</script>
 		</head>
 
 		<body>
+
+			<!-- NAVIGATION/HEADER  -->
 			<nav>
 				<section class="container">
 
@@ -17,10 +44,10 @@
 						<a class="name" href="www.nicobeltran.github.io">Nico Beltran</a>
 					</aside>
 
-					<aside>
-						<a href="#projects">Projects</a>
-						<a href="#about">About</a>
-						<a href="#contact">Contact</a>
+					<aside class="nav">
+						<a class="basic_link" href="#projects">Projects</a>
+						<a class="basic_link" href="#about">About</a>
+						<a class="basic_link" href="#contact">Contact</a>
 					</aside>
 
 				</section>
@@ -31,11 +58,9 @@
 				<h2> Interested in working with front-end technologies to design beautiful, sleek, and usable interfaces. </h2>
 			</header>
 
-			<!-- TO DO: WORK ON PROJECTS BELOW  -->
-
 			<!-- PROJECTS  -->
-			<section class="container">
-				<h1> Projects </h1>
+			<section class="container" id="projects">
+				<h1>&ltProjects/&gt</h1>
 			</section>
 
 			<div class="row">
@@ -48,7 +73,7 @@
 							<div class="description">
 								<h2> Fabflix 
 									<br>
-									<small> Programmer // CS 122B: Projects in Databases and Web Applications // 2017 </small>
+									<small> Programmer // Project in Databases and Web Applications // 2017 </small>
 								</h2>
 								<p> Fabflix is a web application that allows customers to browse or search for movies, learn more about them, and add them to their shopping cart to check out online.  </p>
 
@@ -103,7 +128,7 @@
 
 								<h2> Shark Family Webpage
 									<br>
-									<small> Programmer/Designer // 2016 </small>
+									<small> Programmer/Designer // UCI Circle K // 2016 </small>
 								</h2>
 
 								<p> Webpage made to promote a "family" at a community service organization, UC Irvine Circle K. The webpage intends to inform club members of the bigs of the family in order to aid their choice of which family is right for them.
@@ -122,89 +147,89 @@
 
 				</div>
 
-			<!-- about row -->
+				<section class="container" id="about">
+					<h1> About </h1>
+				</section>
+			<!-- ABOUT ROW -->
 			<div class="row">
+				
 
-				<!-- about me column -->
+				<!-- ABOUT ME COLUMN -->
 				<div class="column column_two">
 					<div class="about">
-						<h1> About Me </h1>
 
-						<h3> As a student and developer... </h3>
+						<h2> As a student and developer... </h2>
 						<p> I'm a student at the University of California, Irvine majoring in Computer Science, specializing in Information. Most of my courses involved programming and software development, but after taking some courses on design, I became more interested in the idea of creating user interfaces. After graduating I plan on getting into the field of web development. At the moment I am very interested in design and frontend development, but I am also open to experimenting and learning more about backend development as well.
 						</p>
 
-						<h3> As a person... </h3>
-						<p> I'm an easygoing person with a lighthearted personality. In my free time, I enjoy playing videogames, watching YouTube videos about random and interesting things, learning more about cooking, and trying out new food places or going for a quick boba run. 
+						<h2> As a person... </h2>
+						<p> I'm an easygoing person with a lighthearted personality. In my free time, I enjoy playing videogames, watching YouTube videos about random and interesting things, urban dance and freestyle, learning more about cooking, and trying out new food places or going for a quick boba run. 
 						</p>
 
 					</div>
 				</div>
 
-				<!-- skills column -->
+				<!-- SKILLS COLUMN -->
 				<div class="column column_two">
 					<div class="about">
-						<h1> Skills </h1>
+						<h2> Skills </h2>
 
-						<h3> Front-end </h3>
-						<p> HTML5, CSS3, Javascript, Responsive Design</p>
+						<h3> Front-end 
+						<br>
+						<small> HTML5, CSS3, Javascript, Responsive Design</small></h3>
+						
 
-						<h3> Design </h3>
-						<p> User Stories, Cognitive Walkthroughs, Competitor Analysis, User Interviews </p>
+						<h3> Design 
+							<br>
+							<small> User Stories, Cognitive Walkthroughs, Competitor Analysis, User Interviews
+							</small>
+						</h3>
 
-						<h3> Back-end/Programming </h3>
-						<p> MySQL, Python C, C++, Java</p>
+						<h3> Back-end/Programming 
+							<br>
+							<small> MySQL, Python C, C++, Java</small>
+						</h3>
+						
 
-						<h3> Currently Learning </h3>
-						<p> ReactJS, AngularJS </p>
+						<h3> Currently Learning 
+							<br>
+							<small> ReactJS, AngularJS</small>
+						</h3>
 					</div>
 				</div>
 
 			</div>
 
-				<section class="container">
+				<section class="container" id="contact">
 					<h1>Contact</h1>
 				</section>
 
 				<div class="row">
 					<div class="column">
 						<div class="about">
-						<h2> I can be easily reached at nicobeltran9@gmail.com</h2>
+							<h2> Contact me at my personal e-mail: nicobeltran9@gmail.com</h2>
 						</div>
 					</div>
 				</div>
 
-				<!-- TO DO:
-					- ADD SMOOTHSCROLL
-					- ADD COPYRIGHT/SOCIAL MEDIA LINKS USING A FOOTER
-					- FIX MEDIA QUERIES AND RESPONSIVENESS -->
+
+
+			<footer>
+				<section class="container">
+
+					<aside>
+						<h2> &copy Nico Beltran, 2018 </h2>
+					</aside>
+
+					<aside>
+						<a class="basic_link" href="https://www.linkedin.com/in/nico-beltran-11a161133/">LinkedIn</a>
+						<a class="basic_link" href="https://github.com/nicobeltran">Github</a>
+						<a class="basic_link" href="/resume.pdf">Resume</a>
+					</aside>
+
+				</section>
+			</footer>
 
 		</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	</html>
