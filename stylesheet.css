@@ -18,15 +18,28 @@ h1 {
 }
 
 h2 {
-	font-size: 1.35em;
+	font-size: 1.45em;
 	font-family: "Raleway", "Times New Roman";
 	font-weight: normal;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 1.25em;
+	font-family: "Montserrat", "Times New Roman";
+	font-weight: normal;
+
 }
 
 p {
-	font-size: 1.25em;
+	font-size: 1.1em;
 	font-family: "Raleway", "Times New Roman";
 
+}
+
+small {
+	font-style: italic;
+	font-size: .6em;
 }
 
 a {
@@ -43,6 +56,14 @@ a.name {
 
 }
 
+a.email {
+	font-weight: 0;
+	text-decoration: none;
+	font-style: italic;
+	font-size: 1.45em;
+
+}
+
 nav {
 	display: flex;
 	height: 256px;
@@ -53,6 +74,18 @@ section {
 	padding: 0 20px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+ul {
+	font-family: "Montserrat", "Times New Roman";
+}
+
+li {
+	font-size: 1em;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "Raleway", "Times New Roman";
+
 }
 
 nav .container {
@@ -86,25 +119,98 @@ nav .container aside {
 
 header {
 	margin-bottom: 128px;
-	margin-top: 128px;
+	/*margin-top: 128px;*/
+}
+
+.row {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	padding: 0px;
 }
 
 .column {
-	color: black;
+	float: left;
+	color: white;
 	width: 100%;
 }
 
 .project {
-	background: white;
-	margin: 0 20px;
+	background-color: white;
+	color: black;
+	margin: 0 20px 20px 20px;
+
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.about {
+	margin: 0 20px 20px 20px;
 }
+
+.description {
+	padding: 10px 20px;
+}
+
 
 img {
 	width: 100%;
 }
+
+.label {
+	font-family: "Raleway";
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 2em;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-right: 5px;
+}
+
+/*tags at the end of projects // frontend colors*/
+.label-front {
+	background-color: #5B8EC8;
+}
+
+/*tags at the end of projects // backend colors*/
+.label-back {
+	background-color: #A9A9A9;
+}
+
+.label-design {
+	background-color: #0D4F8B;
+}
+
+@media screen and (min-width: 600px) {
+    .column_three {
+    	float: left;
+        width: 33%;
+    }
+
+    .column_two {
+    	float: left;
+    	width: 50%;
+    }
+
+    .row:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+	}
+
+	.project {
+		margin-left: 0px;
+	}
+
+	.about {
+	margin-left: 0px;
+}
+}
+
+
+
+
+
