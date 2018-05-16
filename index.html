@@ -12,10 +12,10 @@
 			<link rel="stylesheet" type="text/css" href="stylesheet.css">
 			<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
 
-			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>			
 			<script type="text/javascript" src="./js/jquery.smooth-scroll.js"></script>
 			<script>
-			$(document).ready(function() {
+				$(document).ready(function() {
 					$('aside.nav a').click(function(event) {
         				event.preventDefault();
         				var link = this;
@@ -23,13 +23,7 @@
           				scrollTarget: link.hash
         				});
       				});
-      				$('ul.backtotop').click(function(event) {
-        				event.preventDefault();
-        				var link = this;
-        			$.smoothScroll({
-          				scrollTarget: link.hash
-        				});
-      				});
+      				
       			});
 			</script>
 		</head>
