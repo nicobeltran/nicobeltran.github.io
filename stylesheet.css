@@ -49,7 +49,10 @@ a {
 	color: white;
 }
 
-
+.description a {
+	color: black;
+	font-size: 1em;
+}
 
 a.basic_link {
 	text-decoration: none;
@@ -79,7 +82,7 @@ a.email {
 
 nav {
 	display: flex;
-	height: 256px;
+	height: 128px;
 	align-items: center;
 }
 
@@ -214,7 +217,7 @@ img {
 
 	header {
 		margin-bottom: 256px;
-		margin-top: 128px;
+		margin-top: 256px;
 	}
 
     .column_three {
