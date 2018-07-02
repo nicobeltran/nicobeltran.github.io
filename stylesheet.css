@@ -38,7 +38,7 @@ p {
 }
 
 small {
-	font-style: italic;
+	/*font-style: italic;*/
 	font-size: .7em;
 }
 
@@ -54,10 +54,12 @@ a {
 	font-size: 1em;
 }
 
-a.basic_link {
+.basic_link {
 	text-decoration: none;
 	border-bottom: 2px solid white;
 	padding-bottom: 3px;
+	margin-right: .25em;
+
 }
 
 a.name {
@@ -77,8 +79,8 @@ a.email {
 	text-decoration: none;
 	font-style: italic;
 	font-size: 1.45em;
-
 }
+
 
 nav {
 	display: flex;
@@ -143,7 +145,7 @@ header {
 	margin-right: auto;
 	max-width: 1300px;
 	padding: 0px;
-	padding-bottom: 5em;
+	/*padding-bottom: 5em;*/
 }
 
 .column {
