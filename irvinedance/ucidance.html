@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$( window ).on( "load", init );
+	</script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+	</script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<title>Irvine Dance Community</title>
+	<meta charset="UTF-8">
+	  <!-- <meta name="description" content="Free Web tutorials"> -->
+	  <!-- <meta name="keywords" content="HTML,CSS,XML,JavaScript"> -->
+	  <meta name="author" content="Nico Beltran">
+	  <link rel="stylesheet" href="stylesheet.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+	
+<body>
+
+	<!-- Main hero image section  -->
+	<div> 
+	<section class="hero-image" id="intro">
+		<div class="hero-text">
+			<h1>Irvine Dance Community</h1>
+			<a href="#intro-info">Learn more below</a>
+			<p class="banner-credit">Photo: Kyle Dimla</p>
+		</div>
+	</section>
+	</div>
+
+	<!-- Irvine Dance Community overview -->
+	<section class="overview" id="intro-info">
+		<div class="intro"> 
+			<h2>What is the Irvine Dance Community?</h2>
+			<p>The Irvine Dance Community is composed of 8 teams and various project teams situated at University of California, Irvine. Anyone who is/was a student at UCI or is/was part of a project or team situated at UCI is considered part of the Irvine Dance Community! Some of these teams have been around for decades, while others are more recently formed. Some of the teams compete at various dance competitions, while others are exhibition teams and perform mostly at UCI and community events. Many of the teams also host workshops for anyone interested in learning or training in urban dance. The various teams also perform annually as a community at events such as All UCI or Spring Quarter Dance Festival. Below is information regarding each of the different teams.</p>
+
+		</div>
+		<div class="teams">
+			<h2>Teams in the Irvine Dance Community</h2>
+			<a href="#km-banner">Kaba Modern(KM)</a>
+			<a href="#dc-banner">Chinese Association Dance Crew(CADC)</a>
+			<a href="#bba-banner">Bboys Anonymous(BBA)</a>
+			<a href="#mcia-banner">Modern Completely Insane Anteaters(MCIA)</a>
+			<a href="#cg-banner">Common Ground(CG)</a>
+			<a href="#lvo-banner">Level V Origins(LVO)</a>
+			<a href="#insa-banner">I Never Stand Alone(INSA)</a>
+			<a href="#um-banner">Urban Motus(UrMo)</a>
+			
+		</div>
+	</section>
+
+	<!-- Team information Section -->
+	<section>
+		<!-- Kaba Modern -->
+
+		<!-- Kaba Banner -->
+		<div class="hero-image" id="km-banner">
+			<div class="hero-text">
+				<h1>Kaba Modern</h1>
+				<p class="banner-credit">Photo: Steezy</p>
+			</div>
+		</div>
+
+		<div class="odd-row">
+			<div class="slideshow-container" id="gallery1">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 4</div>
+					<img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/18839119_1919127341632652_3249393856675379715_n.jpg?_nc_cat=0&oh=d9268924c31f8e43dcecb7d38d62c902&oe=5BEBB597">
+					<div class="credit">Photo: KM25 Photoshoot</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 4</div>
+					<img src="https://c1.staticflickr.com/5/4174/34034991240_7b42b03b79_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 4</div>
+					<img src="https://c1.staticflickr.com/5/4167/34260689872_a790db32fc_c.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<div class="imageSlide">
+					<div class="numbertext">4 / 4</div>
+					<img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/23592019_884562938362227_7109504387532260607_o.jpg?_nc_cat=0&oh=deffe3f28704fb3601684d1623dd2a35&oe=5BE5DFF1">
+					<div class="credit">Photo: Steezy</div>
+				</div>
+				
+				
+				<!-- previous/next buttons -->
+				<div class="prev" onclick='nextSlide(-1, "gallery1")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery1")'>&#10095;</div>
+
+			</div>
+
+			<div class="team-info">
+				<h2>Kaba Modern (KM)</h2>
+				<h3>Founded 1992 | Competitive </h3>
+				<p>Kaba Modern is an urban collegiate dance group established in 1992 by Arnel Calvario. As a proud part of the Filipino-American club Kababayan, at the University of California, Irvine, he founded the group to perform in the modern dance suite of their annual PCN (Pilipino cultural night). The group has since evolved to be one of the most cutting edge Hip Hop dance crews in California. Kaba Modern’s legacy has lived on, first and foremost, as a family of artists, while embracing diverse styles of dance to create a name for themselves in the dance community.</p>
+
+				<div class="links">
+					<a href="https://en.wikipedia.org/wiki/Kaba_Modern" target="_blank">Wikipedia</a>
+					<a href="https://www.facebook.com/kabamodern/" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/kabamodern/" target="_blank">Instagram</a>
+					<a href="https://twitter.com/kabamodern?lang=en" target="_blank">Twitter</a>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- CADC -->	
+
+	<!-- DC Banner -->
+		<div class="hero-image" id="dc-banner">
+			<div class="hero-text">
+				<h1>CADC</h1>
+				<p class="banner-credit">Photo: Steezy</p>
+			</div>
+		</div>
+
+
+		<div class="even-row">
+			<div class="slideshow-container" id="gallery2">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4696/40652713451_cf08dbd608_c.jpg">
+					<div class="credit">Photo: Bryan Le</div>
+
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4169/33612614294_73fb77f75e_c.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/15493558_704872712997918_1847089214921873086_o.jpg?_nc_cat=0&oh=6ac5c3d93d1f44c9cf279da9f2f77578&oe=5BB03296">
+					<div class="credit">Photo: Steezy</div>
+				</div>
+
+				<!-- prev/next arrows -->
+				<div class="prev" onclick='nextSlide(-1, "gallery2")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery2")'>&#10095;</div>
+			</div>
+
+
+			<div class="team-info">
+				<h2>Chinese Association Dance Crew (CADC)</h2>
+				<h3>Founded 1994 | Competitive</h3>
+				<p>Chinese Association Dance Crew, more popularly known as CADC, is an offshoot organization that stems from UCI's Chinese Association. Formed in 1994 by Lawrence Yang and Chris Wang and previously exclusive only to UC Chinese Club events, CADC (formerly known as CA Modern) has expanded their goals and gained a place within Southern California's hip hop dance scene with in the last several years. CADC is strictly a collegiate team, meaning that all dance members are official UCI students and CA club members. Although these two requirements have restricted many potential talented dancers from joining the team, CADC's past and present coordinators have done an outstanding job of recruiting teams with talent and most importantly, great chemistry. </p>
+
+				<div class="links">
+					<a href="http://www.cadcuci.net/cadc/" target="_blank">Website</a>
+					<a href="https://www.facebook.com/CADANCECREW" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/cadancecrew/?hl=en" target="_blank">Instagram</a>
+					<a href="https://twitter.com/cadancecrew?lang=en" target="_blank">Twitter</a>
+					<a href="https://www.youtube.com/channel/UC8jLu1xHdcdjTPSN10dx6Ww" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	<!-- BBA  -->
+
+	<!-- BBA Banner -->
+		<div class="hero-image" id="bba-banner">
+			<div class="hero-text">
+				<h1>Bboys Anonymous</h1>
+				<p class="banner-credit">Photo: Kyle Dimla</p>
+			</div>
+		</div>
+
+		<div class="odd-row">
+			<div class="slideshow-container" id="gallery3">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4155/34329922231_92111482c6_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4160/34329931511_60fcd5bc94_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4178/34329922561_a725fc4756_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+
+
+				<div class="prev" onclick='nextSlide(-1, "gallery3")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery3")'>&#10095;</div>
+			</div>
+
+
+
+
+
+			<div class="team-info">
+				<h2>Bboys Anonymous (BBA)</h2>
+				<h3>Founded 1998 | Exhibition</h3>
+				<p>B-Boys Anonymous is a freestyle-dance based club that welcomes all members of the UC Irvine community, regardless of experience or background in dance. Serving as an open environment for students to learn and grow as dancers, B-Boys Anonymous serves to spread the knowledge of Hip Hop culture and the art of freestyle to a greater audience by hosting open dance floors, workshops, and competitions, among other events.</p>
+
+				<div class="links">
+					<a href="https://www.facebook.com/BBoysAnonymous" target="_blank">Facebook</a>
+					<a href="https://twitter.com/bboysanonymous" target="_blank">Twitter</a>
+					<a href="https://www.youtube.com/user/BBoysAnonymous" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	<!-- MCIA -->
+
+		<!-- MCIA Banner -->
+		<div class="hero-image" id="mcia-banner">
+			<div class="hero-text">
+				<h1>MCIA</h1>
+				<p class="banner-credit">Photo: Kyle Dimla</p>
+			</div>
+		</div>
+
+
+		<div class="even-row">
+			<div class="slideshow-container" id="gallery4">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 4</div>
+					<img src="https://c1.staticflickr.com/5/4679/38234735144_85515fecd2_b.jpg">
+					<div class="credit">Photo: My Thanh Vo Luong</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 4</div>
+					<img src="https://photos.smugmug.com/SQDF-2k18/n-sGLLBs/i-NjQTdSv/0/71ebd3c7/X3/i-NjQTdSv-X3.jpg">
+					<div class="credit">Photo: Lisa Nguyen</div>
+				</div>
+
+				<div class="imageSlide">
+					<div class="numbertext">3 / 4</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/32471936_1002405549916423_7555091127158702080_o.jpg?_nc_cat=0&_nc_eui2=AeFOuj20lQJOjnOIXD87Adtu-qdgwmr31aweDT0iQhohZocAh4H17_38jzzDlxa08MLlqNrrSpAVbWSS0fEhAGqkLTPRABDajz8rOCrZtLvKnA&oh=9665dc6b8dcc027bc3dfd8a572fb0b5d&oe=5BA53F74">
+					<div class="credit">Photo: Reyhan Almazar</div>
+				</div>
+
+				<!-- pic 4 -->
+				<div class="imageSlide">
+					<div class="numbertext">4 / 4</div>
+					<img src="https://lh3.googleusercontent.com/CMclNIK_Jc51_h14jkZifU1C1ZiWyQj3r0QTaWsCFy5Geyu5HpHGQ4AFKTsp0nlAdZoz65JxAxso5X9ootwbD_UfL691SzgNpCPZ70Q7zrOCHd04xvNQZpUjVVZZTkku1A7nmN5QW5KJ7NwqstqDfCehYDGB0HOkskVKO2dhfo_UEFkbYQCZyH7KiBozMjOo9gMn-38bv21t7hRHsJL-6vIY7UGY6al7WVV4s_JoA7Zm24rvCHJxWn6LRmJ0n4w7EfsZH9cLeS8inYs1AF1ca0oeI0cde_khh11qYwtAj6SsHsvoYynlgRuN5eNdrMmRmKwoRYxys4RaBa4bbPHN13_YzQXR02GW3cBN_VoHk7Wa180aQljmyThlwPEL66a-UTuZFaWvtIbftAlf5IM3H0MmaW05IvkZMzrMJT_b7mxTuz5r7qaIT8hHF_mSbj2VhAL_533j_qv_pKJkNJDm7iySULNbtIW_2nQcHOLDmpzp3C-f8UYz8HG5AcKba44-OFNY1UE07G62DKncB_sZLvhPyLDgyfziKCIB3PEberSVm40vJzU_MQzark9xYJyEuwG0bEAApoSU8a93m1NZ-_hDzXu4akQbcfRStRLyPGiHff0PQPh3O6MZritFjKJLlbqvXr4ISLIjT-a-uQVO5PrUSuTEtpQk=w2180-h1452-no">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- prev/next arrows -->
+				<div class="prev" onclick='nextSlide(-1, "gallery4")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery4")'>&#10095;</div>
+			</div>
+
+
+			<div class="team-info">
+				<h2>Modern Completely Insane Anteaters (MCIA)</h2>
+				<h3>Founded 2003 | Exhibition</h3>
+				<p>
+				Established 2003 by Alex Pantig as a branch of the school spirit pit crew, Modern Completely Insane Anteaters, more commonly known as MCIA, is an exhibition hip-hop dance team that gives its members opportunities to dance, grow, and have fun while upholding the values of respect, family, and its roots. Currently in the fifteenth year of its dance journey, MCIA has grown to become not just a hip-hop team, but a dance family. MCIA has been fortunate enough to have established ties within and outside the Irvine dance community. Over the years, the team has performed for events around Southern California, including at UCLA, Clippers' basketball games, and various nightclubs, while staying true to its roots and continuing to perform on the UCI campus and at UCI basketball games. </p>
+
+				<div class="links">
+					<a href="http://www.mciadanceteam.org/" target="_blank">Website</a>
+					<a href="https://www.facebook.com/mciadanceteam" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/mciadanceteam/" target="_blank">Instagram</a>
+					<a href="https://www.youtube.com/channel/UC44XEnEINkzNNa_140p5EAA">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	<!-- Common Ground -->
+
+		<!-- Common Ground Banner -->
+		<div class="hero-image" id="cg-banner">
+			<div class="hero-text">
+				<h1>Common Ground</h1>
+				<p class="banner-credit">Photo: Steezy</p>
+			</div>
+		</div>
+
+		<div class="odd-row">
+			<div class="slideshow-container" id="gallery5">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4186/33552028604_8cee4f34a1_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/15271917_704876896330833_4143436627631826320_o.jpg?_nc_cat=0&oh=c811d1bab3ee04720eaa03f67cce9637&oe=5B9F0C71">
+					<div class="credit">Photo: Steezy</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/15443168_704877019664154_5200913173113365456_o.jpg?_nc_cat=0&oh=4f802e6bd9da9e78ade7a54879a1196f&oe=5BA4F27E">
+					<div class="credit">Photo: Steezy</div>
+				</div>
+
+				<div class="prev" onclick='nextSlide(-1, "gallery5")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery5")'>&#10095;</div>
+			</div>
+
+			<div class="team-info">
+				<h2>Common Ground (CG)</h2>
+				<h3>Founded 2004 | Competitive</h3>
+				<p>Established in 2004 by co-founders Brian "Big B" Amigable, Kirk Arradaza, Tommy Pham, and David "Q-boi" Quach, Common Ground is based at the University of California, Irvine. CG is comprised of both UCI and non-UCI students, bringing together a unique, diverse group of dancers from all over southern California. The team strives to show how much passion and love they have for dance and the hip-hop community. At the same time, they maintain a family environment by hanging out together, caring for each other, and sharing the desire to dance.</p>
+
+				<div class="links">
+					<a href="https://www.facebook.com/cgdanceteam/" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/cg_danceteam/?hl=en" target="_blank">Instagram</a>
+					<a href="https://www.youtube.com/user/commonground/" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	<!-- LVO -->
+
+		<!-- LVO BANNER -->
+		<div class="hero-image" id="lvo-banner">
+			<div class="hero-text">
+				<h1>LVO</h1>
+				<p class="banner-credit">Photo: Jarrod Rocha</p>
+			</div>
+		</div>
+
+
+		<div class="even-row">
+			<div class="slideshow-container" id="gallery6">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4155/33534792334_676db126b2_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/22179878_2105105702848548_2524424044825605703_o.jpg?_nc_cat=0&_nc_eui2=AeFahT9TrQHdy_4qWO2MPB77lHwWtDFBauFQsvyyGi35PeLTTe_sv7gEbavL7XMEAUoNVM3X1v68w6RDe_ROu8nrNRydeHHnJdVFi3KnYTajUA&oh=b567b469a7f16f6aee18e35b6881842b&oe=5BE3500B">
+					<div class="credit">Photo: Jarrod Rocha</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4190/33534804074_32746fae33_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- prev/next arrows -->
+				<div class="prev" onclick='nextSlide(-1, "gallery6")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery6")'>&#10095;</div>
+			</div>
+
+
+			<div class="team-info">
+				<h2>Level V Origins (LVO)</h2>
+				<h3>Founded 2006 | Exhibition</h3>
+				<p>
+				Level V Origins is an exhibition dance team that exists to provide the opportunity for those who have never had previous dance experience to explore hip hop dance. Our goal is to develop and hone leadership skills through our shared passion for dance while also expressing our Vietnamese-American identity.</p>
+
+				<div class="links">
+					<a href="http://www.vsauci.org/level-v-origins.html" target="_blank">Website</a>
+					<a href="https://www.facebook.com/lvodanceteam/" target="_blank">Facebook</a>
+					<a href="https://www.youtube.com/user/level5danceteam" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	<!-- INSA -->
+
+		<!-- INSA BANNER -->
+		<div class="hero-image" id="insa-banner">
+			<div class="hero-text">
+				<h1>INSA</h1>
+				<p class="banner-credit">Photo: Jarrod Rocha</p>
+			</div>
+		</div>
+
+
+		<div class="odd-row">
+			<div class="slideshow-container" id="gallery7">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/33898052_1629449147124507_7358015612183904256_o.jpg?_nc_cat=0&oh=5db35ae66f4ee60c9a29ba11b3886655&oe=5BA832E2">
+					<div class="credit">Photo: INSA Photoshoot</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://photos.smugmug.com/SQDF-2k18/n-sGLLBs/i-FfFTVk3/0/2b4a9e40/X3/i-FfFTVk3-X3.jpg">
+					<div class="credit">Photo: Lisa Nguyen</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://photos.smugmug.com/SQDF-2k18/n-sGLLBs/i-dJDGgxH/0/5a99b997/X3/i-dJDGgxH-X3.jpg">
+					<div class="credit">Photo: Lisa Nguyen</div>
+				</div>
+
+				<!-- prev/next arrows -->
+				<div class="prev" onclick='nextSlide(-1, "gallery7")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery7")'>&#10095;</div>
+			</div>
+
+
+			<div class="team-info">
+				<h2>I Never Stand Alone (INSA)</h2>
+				<h3>Founded 2008 | Exhibition</h3>
+				<p>
+				INSA Dance is an exhibition hip-hop dance team based at UC Irvine. Founded in 2008, our mission is to continue to share our passion for dance with the public. As a family, we uphold our values and the name I Never Stand Alone. </p>
+
+				<div class="links">
+					<a href="https://www.facebook.com/INSADanceTeam/" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/insadance/?hl=en" target="_blank">Instagram</a>
+					<a href="https://www.youtube.com/user/INSAdanceteam" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	<div class="hero-image" id="um-banner">
+		<div class="hero-text">
+			<h1>Urban Mótus</h1>
+			<p class="banner-credit">Photo: Kyle Dimla</p>
+		</div>
+	</div>
+
+
+		<div class="even-row">
+			<div class="slideshow-container" id="gallery8">
+
+				<!-- pic 1 -->
+				<div class="imageSlide">
+					<div class="numbertext">1 / 3</div>
+					<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/28423119_2126001087677934_6965423406849093300_o.jpg?_nc_cat=0&_nc_eui2=AeEUV1fXzbqrWYEtYyMr4SHvTb_0DNnAlrf9OMjeC80QwNt62R-qSbnLDB59apWakNGBzNG3C15XBsGY-LiqWWpk75nqvIjHj91uhGSKVyOkfw&oh=779386877067f352edb16be2aa77349f&oe=5BB1139B">
+					<div class="credit">Photo: My Thanh Vo Luong</div>
+				</div>
+
+				<!-- pic 2 -->
+				<div class="imageSlide">
+					<div class="numbertext">2 / 3</div>
+					<img src="https://photos.smugmug.com/SQDF-2k18/n-sGLLBs/i-C3px78b/0/070eb7ae/X3/i-C3px78b-X3.jpg">
+					<div class="credit">Photo: Lisa Nguyen</div>
+				</div>
+
+				<!-- pic 3 -->
+				<div class="imageSlide">
+					<div class="numbertext">3 / 3</div>
+					<img src="https://c1.staticflickr.com/5/4168/33590133573_79b875c8d5_b.jpg">
+					<div class="credit">Photo: Kyle Dimla</div>
+				</div>
+
+				<!-- prev/next arrows -->
+				<div class="prev" onclick='nextSlide(-1, "gallery8")'>&#10094;</div>
+				<div class="next" onclick='nextSlide(+1, "gallery8")'>&#10095;</div>
+			</div>
+
+
+			<div class="team-info">
+				<h2>Urban Mótus (UrMo)</h2>
+				<h3>Founded 2010 | Exhibition</h3>
+				<p>Urban Motus is a group of inspired individuals who come together to share a common passion for dance through humility, dedication, and discipline.</p>
+
+				<div class="links">
+					<a href="https://www.facebook.com/urbanmotusdance/" target="_blank">Facebook</a>
+					<a href="https://www.instagram.com/urbanmotus/?hl=en" target="_blank">Instagram</a>
+					<a href="https://www.youtube.com/user/UrbanMotusUCI" target="_blank">YouTube</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<a href="#intro"> Back to the top </a>
+		<h3>&copy Nico Beltran 2018</h3>
+
+	</footer>
+
+</body>
+</html>
