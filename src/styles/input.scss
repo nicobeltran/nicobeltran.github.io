@@ -208,23 +208,23 @@ footer {
     }
 }
 
-.invis {
-    opacity: 0;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    @include transition(800ms);
-    @include invisible_transform(25px);
-}
+// .invis {
+//     opacity: 0;
+//     -webkit-backface-visibility: hidden;
+//     -moz-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     @include transition(500ms);
+//     @include invisible_transform(50px);
+// }
 
-.vis {
-    opacity: 1;
-    -moz-transform: translate3d(0px, 0px, 0px);
-    -webkit-transform: translate3d(0px, 0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate3d(0px, 0px, 0px);
-}
+// .vis {
+//     opacity: 1;
+//     -moz-transform: translate3d(0px, 0px, 0px);
+//     -webkit-transform: translate3d(0px, 0px, 0px);
+//     -o-transform: translate(0px, 0px);
+//     -ms-transform: translate(0px, 0px);
+//     transform: translate(0, 0);
+// }
 
 .tagline {
 
