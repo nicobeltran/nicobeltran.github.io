@@ -50,10 +50,10 @@ $(document).on("click",".back-to-top", function (e) {
 $(document).on('click', '.load' ,function(e){
     e.preventDefault();
 
-    $("#content").animate({ opacity: 0, 'margin-top': '3em' }, 500, function () {
+    $("#content").stop().animate({ opacity: 0, 'margin-top': '2em'}, 500, function () {
         $("#content").load(e.target.href, function () {
-            $("#content").animate({ opacity: 1, 'margin-top': '.5em' }, 500);
-            }).delay(250);
+            $("#content").animate({ opacity: 1, 'margin-top': '.5em'}, 500);
+            });
         });
 })
 
