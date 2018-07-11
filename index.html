@@ -1,267 +1,79 @@
 <!DOCTYPE html>
+<html>
 
-	<html>
-		<head>
-			<title> Nico Beltran </title>
-			<meta name="author" content="Nico Beltran">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>			
-			<script type="text/javascript" src="./js/jquery.smooth-scroll.js"></script>
-			<script>
-				$(document).ready(function() {
-					$('aside.nav a').click(function(event) {
-        				event.preventDefault();
-        				var link = this;
-        			$.smoothScroll({
-          				scrollTarget: link.hash
-        				});
-      				});
-      				
-      			});
-			</script>
-		</head>
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="/src/styles/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-		<body>
+</head>
 
-			<!-- NAVIGATION/HEADER  -->
-			<nav>
-				<section class="container">
+<body>
 
-					<aside>
-						<a class="name" href="www.nicobeltran.github.io">Nico Beltran</a>
-					</aside>
+    <!-- nav bar -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-sm-12 text-center text-md-left">
+                        <a class="name-link links load" href="./src/projects.html">Nico Beltran</a>
+                    </div>
 
-					<aside class="nav">
-						<a class="basic_link" href="#projects">Projects</a>
-						<a class="basic_link" href="#about">About</a>
-						<a class="basic_link" href="#contact">Contact</a>
-					</aside>
+                    <div class="col text-center text-md-right">
+                        <a class="default-link links load active-link" href="./src/projects.html">Projects</a>
+                    </div>
+                    <div class="col text-center text-md-right">
+                        <a class="links load" href="./src/about.html">About</a>
+                    </div>
+                    <div class="col text-center text-md-right">
+                        <a class="links load" href="./src/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-				</section>
-			</nav>
+    </header>
 
-			<header class="container">
-				<h1> Aspiring Web Developer </h1>
-				<h2> // Interested in working with front-end technologies to design beautiful and sleek webpages and interfaces. </h2>
-			</header>
+    <!-- Content  -->
+    <section id="content">
+        <!-- Content goes in here during load  -->
+    </section>
 
-			<!-- PROJECTS  -->
-			<section class="container" id="projects">
-				<h1>&ltProjects/&gt</h1>
-			</section>
+    <footer>
+        <div class="row">
+            <div class="col text-center">
+                <div class="footer-text">
+                    <a href="/" class="back-to-top invisible">Back to top</a>
+                    <p class="copyright">&copy Nico Beltran 2018</p>
+                    <p>Last updated: July 10 2018</p>
+                </div>
 
-			<!-- First project row -->
-			<div class="row">
+            </div>
 
-				<!-- Irvine Dance Community -->
-				<div class="column column_three">
-							<div class="project">
-								<img class="thumbnail" src="imgs/ucidance.png" alt="ucidance_pic">
-
-								<div class="description">
-
-									<h2> <a href="https://nicobeltran.github.io/ucidancecommunity/">UCI Dance Community Webpage</a> <small></small>
-										<br>
-										<small> Programmer/Designer | 2018 | <a href="https://github.com/nicobeltran/ucidancecommunity">Github</a></small>
-										<br>
-
-									</h2>
-
-									<p> Webpage made to showcase and inform people about the various dance teams situated at UCI. My goal for this page was to make something that would compile information about the dance community at UCI because there isn't a page that does it well. I also wanted to learn how to create Javascript slideshows, as well as learn and create something using SASS. 
-									</p>
-									<p>The main layout and design were made using HTML5, CSS3, and SASS. The slideshows were implemented using Javascript. Smooth scrolling implemented using jQuery.</p>
-
-									<p>
-										<span class="label label-front">HTML5</span>
-										<span class="label label-front">CSS3</span>
-										<span class="label label-front">SASS</span>
-										<span class="label label-front">Javascript</span>
-										<span class="label label-front">jQuery</span>
-									</p>
-
-								</div>
-
-							</div>
-
-						</div>
-
-				<!-- Portfolio -->
-					<div class="column column_three">
-						<div class="project">
-							<img class="thumbnail" src="imgs/nico_sakura.jpg" alt="portfolio_pic">
-
-							<div class="description">
-								<h2> Portfolio Website
-									<br>
-									<small> Programmer/Designer | 2018 | <a href="https://github.com/nicobeltran/nicobeltran.github.io">Github</a></small>
-								</h2>
-								<p> Personal website made to showcase projects and to give more information about myself as a person and as a developer. Originally made for a user interaction course at UCI. </p>
-								<p> Main layout and design made using HTML5 and CSS3. Smooth scrolling done using jQuery</p>
-
-								<p>
-									<span class="label label-front">HTML5</span>
-									<span class="label label-front">CSS3</span>
-									<span class="label label-front">jQuery</span>
-								</p>
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- Fabflix -->
-					<div class="column column_three">
-						<div class="project">
-							<img class="thumbnail" src="imgs/fabflix.png">
-
-							<div class="description">
-								<h2> Fabflix 
-									<br>
-									<small> Programmer // Project in Databases and Web Applications // 2017 </small>
-								</h2>
-								<p> Fabflix is a web application that allows customers to browse or search for movies, learn more about them, and add them to their shopping cart to check out online.  </p>
-								<p> This web application was made for a course at UCI and was made in partnership with Eric Vu. We no longer have student credits to use for Amazon Web Services so we no longer have a functional website to show. For more information on the project, here is the <a href="https://grape.ics.uci.edu/wiki/public/wiki/cs122b-2017-spring">class website.</a>
-
-								<p>
-									<span class="label label-front"> HTML </span>
-									<span class="label label-front"> CSS </span>
-									<span class="label label-front"> Javascript </span>
-									<span class="label label-front"> jQuery </span>
-									<br>
-									<span class="label label-back"> MySQL </span>
-									<span class="label label-back"> Java </span>
-									<span class="label label-back"> Amazon Web Services </span>
-									<span class="label label-back"> Apache Tomcat </span>
-									<span class="label label-back"> Bootstrap </span>
-								</p>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
+        </div>
+    </footer>
 
 
-			<!-- Second project row -->
-			<div class="row">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="./src/scripts/script.js"></script>
+    
+    <script>
+        $("#content").load("./src/projects.html", function () {
+            $("#content").animate({ opacity: 1, 'margin-top': '.5em' }, 1000);
+        });
 
-					<!-- Shark Fam webpage -->
-					<div class="column column_three">
-						<div class="project">
-							<img class="thumbnail" src="imgs/sharkfam_webpage.png" alt="sharkpage_pic">
+    </script>
+</body>
 
-							<div class="description">
-
-								<h2> <a href="http://www.ucicirclek.com/family/45-shark/">Shark Family Webpage</a>
-									<br>
-									<small> Programmer/Designer // UCI Circle K // 2016</small>
-									<br>
-
-								</h2>
-
-								<p> Webpage made to promote a "family" at a community service organization, UC Irvine Circle K. The webpage intends to inform club members of the bigs of the family in order to aid their choice of which family is right for them.
-								</p>
-
-								<p>
-									<span class="label label-front">HTML</span>
-									<span class="label label-design">Photoshop</span>
-								</p>
-
-							</div>
-
-						</div>
-
-					</div>
-			</div>
-
-			<section class="container" id="about">
-				<h1> About </h1>
-			</section>
-			<!-- ABOUT ROW -->
-			<div class="row">
-				
-
-				<!-- ABOUT ME COLUMN -->
-				<div class="column column_two">
-					<div class="about">
-
-						<h2> As a student and developer... </h2>
-						<p> I'm a student at the University of California, Irvine majoring in Computer Science, specializing in Information. I am graduating in June, 2018. Most of my courses involved programming and software development, but after taking some courses on design, I became more interested in the idea of creating user interfaces. After graduating I plan on getting into the field of web development. At the moment I am very interested in design and frontend development, but I am also open to experimenting and learning more about backend development as well.
-						</p>
-
-						<h2> As a person... </h2>
-						<p> I'm an easygoing person with a lighthearted personality. In my free time, I enjoy playing videogames, watching YouTube videos about random and interesting things, urban dance and freestyle, learning more about cooking, and trying out new food places or going for a quick boba run. 
-						</p>
-
-					</div>
-				</div>
-
-				<!-- SKILLS COLUMN -->
-				<div class="column column_two">
-					<div class="about">
-						<h2> Skills </h2>
-
-						<h3> Front-end 
-						<br>
-						<small> HTML5, CSS3, Javascript</small></h3>
-						
-
-						<h3> Design 
-							<br>
-							<small> User Stories, Cognitive Walkthroughs, Competitor Analysis, User Interviews, Responsive Design
-							</small>
-						</h3>
-
-						<h3> Back-end/Programming 
-							<br>
-							<small> MySQL, Python, C, C++, Java</small>
-						</h3>
-						
-
-						<h3> Currently Learning 
-							<br>
-							<small> ReactJS, AngularJS, SASS</small>
-						</h3>
-					</div>
-				</div>
-
-			</div>
-
-				<section class="container" id="contact">
-					<h1>Contact</h1>
-				</section>
-
-				<div class="row">
-					<div class="column">
-						<div class="about">
-							<h2> Contact me at my personal e-mail: nicobeltran9@gmail.com</h2>
-						</div>
-					</div>
-				</div>
-
-
-
-			<footer>
-				<section class="container">
-
-					<aside>
-						<h2> &copy Nico Beltran, 2018 </h2>
-					</aside>
-
-					<aside>
-						<a class="basic_link" href="https://www.linkedin.com/in/nico-beltran-11a161133/">LinkedIn</a>
-						<a class="basic_link" href="https://github.com/nicobeltran">Github</a>
-						<a class="basic_link" href="NicoBeltranResumeWeb.pdf">Resume</a>
-					</aside>
-
-				</section>
-			</footer>
-
-		</body>
-
-	</html>
+</html>

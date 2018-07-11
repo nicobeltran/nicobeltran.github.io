@@ -1,0 +1,298 @@
+// Colors
+$bg-color: #fffafa	;
+$complement: #0D4F8B;
+
+// Fonts
+$rale: 'Raleway', 'sans-serif';
+$montserrat: 'Montserrat', 'sans-serif';
+$lato: 'Lato', 'sans-serif';
+
+// Media query sizes
+$mq-tablet: 768px;
+$mq-pc: 1024px;
+
+// Mixins
+@mixin tablet {
+	@media screen and (min-width: $mq-tablet) {
+		@content;
+	}
+}
+
+@mixin pc {
+	@media screen and (min-width: $mq-pc) {
+		@content;
+	}
+}
+
+@mixin invisible_transform($amount) {
+    -moz-transform: translate3d(0px, $amount, 0px);
+    -webkit-transform: translate3d(0px, $amount, 0px);
+    -o-transform: translate(0px, $amount);
+    -ms-transform: translate(0px, $amount);
+    transform: translate3d(0px, $amount, 0px);
+}
+
+@mixin transition($amount) {
+    -moz-transition: all $amount ease-in;
+    -webkit-transition: all $amount ease-in;
+    -o-transition: all $amount ease-in;
+    transition: all $amount ease-in;
+}
+
+@mixin project_background ($url) {
+    background-image: url($url); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin icon_hover {
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+html, body {
+    background: $bg-color;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+h1 {
+    margin: .5em 0em;
+    font-size: 2em;
+    font-family: $montserrat;
+
+    @include tablet {
+        font-size: 3em;
+    }
+
+    @include pc {
+        font-size: 3.5em;
+    }
+}
+
+h4 {
+    font-family: $montserrat;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: $rale;
+}
+
+a {
+    font-family: $lato;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    font-family: $lato;
+    font-weight: bold;
+    @include transition(250ms);
+}
+
+a:hover {
+    text-decoration: none;
+    color: $complement;
+}
+
+i {
+    font-size: 3em;
+}
+
+nav {
+    // Positioning
+    padding: 2em 0em;
+
+    @include tablet {
+        padding: 3em 0em;
+    }
+
+}
+
+
+.name-link {
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: $montserrat;
+}
+
+.active-link {
+    color: $complement;
+}
+
+footer {
+    text-align: center;
+}
+
+#content {
+    margin-top: 10em;
+    opacity: 0;
+
+    // forces position of scroll bar for contact page to avoid slight shift
+    width: 100%;
+    min-height: 75vh;
+}
+
+.project {
+    // Styling/Positioning
+    position: relative;
+    background: #eee;
+    height: 450px;
+    margin-bottom: 2em;
+
+    border: solid #eee 1px;
+
+}
+
+.project-text {
+    background: rgba(13, 79, 139, 0.5);
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-shadow: black 0px 0px 50px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    padding:  2em;
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    h1 {
+        padding-bottom: .5em;
+        margin-bottom: 0;
+        font-size: 2em;
+        border-bottom: solid white 2px;
+    }
+
+    a {
+        color: white;
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    @include pc {
+        opacity: 0;
+        background: rgba(13, 79, 139, .8);
+        padding: 4em;
+        @include transition(500ms);
+    }
+}
+
+@include pc {
+    .project-text:hover {
+        opacity: 1;
+    }
+}
+
+.invis {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    @include transition(800ms);
+    @include invisible_transform(25px);
+}
+
+.vis {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.tagline {
+
+    h1 {
+        // font-size: 2em;
+    }
+}
+
+// Project backgrounds
+#idc-project {
+    @include project_background('./backgrounds/ucidancecommunity.jpg')
+}
+
+#rtd-project {
+    @include project_background('./backgrounds/react-todo.png')
+}
+
+#ryt-project {
+    @include project_background('./backgrounds/react-tube.png')
+}
+
+#faf-project {
+    @include project_background('./backgrounds/fabflix.jpg')
+}
+
+#por-project {
+    @include project_background('./backgrounds/me.jpg')
+}
+
+.about {
+    width: 85%;
+}
+
+.add-margin-top {
+    margin-top: 1em;
+}
+
+.footer-text {
+    padding-top: 1em;
+
+    a {
+        font-size: 1em;
+    }
+    p.copyright {
+        margin-bottom: 0;
+    }
+}
+
+#linkedin-icon:hover {
+    color: #0077B5;
+    // @include icon_hover;
+}
+
+#github-icon:hover {
+    color: #4078c0;
+    // @include icon_hover;
+}
+
+#email-icon:hover {
+    color: #2f4f4f;
+    // @include icon_hover;
+}
+
+.add-margin-bottom {
+    margin-bottom: 2em;
+}
+
+.add-margin {
+    margin: 1em 0em;
+}
+
