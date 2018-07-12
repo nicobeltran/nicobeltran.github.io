@@ -147,13 +147,13 @@ footer {
     background: #eee;
     height: 450px;
     margin-bottom: 2em;
-
+    overflow: hidden;
     border: solid #eee 1px;
 
 }
 
 .project-text {
-    background: rgba(13, 79, 139, 0.5);
+    background: rgba(105, 105, 105, 0.5);
     height: 100%;
     width: 100%;
     color: white;
@@ -196,7 +196,7 @@ footer {
 
     @include pc {
         opacity: 0;
-        background: rgba(13, 79, 139, .8);
+        background: rgba(105, 105, 105, 0.7);
         padding: 4em;
         @include transition(500ms);
     }
@@ -208,23 +208,23 @@ footer {
     }
 }
 
-// .invis {
-//     opacity: 0;
-//     -webkit-backface-visibility: hidden;
-//     -moz-backface-visibility: hidden;
-//     backface-visibility: hidden;
-//     @include transition(500ms);
-//     @include invisible_transform(50px);
-// }
+.invis {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    @include transition(500ms);
+    @include invisible_transform(10px);
+}
 
-// .vis {
-//     opacity: 1;
-//     -moz-transform: translate3d(0px, 0px, 0px);
-//     -webkit-transform: translate3d(0px, 0px, 0px);
-//     -o-transform: translate(0px, 0px);
-//     -ms-transform: translate(0px, 0px);
-//     transform: translate(0, 0);
-// }
+.vis {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0, 0, 0);
+}
 
 .tagline {
 
@@ -235,23 +235,23 @@ footer {
 
 // Project backgrounds
 #idc-project {
-    @include project_background('./backgrounds/ucidancecommunity.jpg')
+    @include project_background('./imgs/ucidancecommunity.jpg')
 }
 
 #rtd-project {
-    @include project_background('./backgrounds/react-todo.png')
+    @include project_background('./imgs/react-todo.jpg')
 }
 
 #ryt-project {
-    @include project_background('./backgrounds/react-tube.png')
+    @include project_background('./imgs/react-tube.jpg')
 }
 
 #faf-project {
-    @include project_background('./backgrounds/fabflix.jpg')
+    @include project_background('./imgs/fabflix.jpg')
 }
 
 #por-project {
-    @include project_background('./backgrounds/me.jpg')
+    @include project_background('./imgs/portfolio_me.jpg')
 }
 
 .about {
@@ -295,4 +295,6 @@ footer {
 .add-margin {
     margin: 1em 0em;
 }
+
+
 

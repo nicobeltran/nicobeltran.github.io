@@ -1,32 +1,33 @@
 var $window = $(window);
+var window_height = $window.height();
 
 // function to check if any new element should be in view and if so, make it visible
-// function inView() { 
-//     let $animateElement = $(".animate-onScroll");
-//     // get the position of current window
-//     var window_height = $window.height();
-//     var window_top_position = $window.scrollTop();
-//     var window_bottom_position = (window_top_position + window_height);
+function inView() { 
+    let $animateElement = $(".invis");
+    // get the position of current window
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
 
-//     if ($animateElement) {
-//         $.each($animateElement, function () {
-//             var $element = $(this);
-//             var element_height = $element.outerHeight();
-//             var element_top_position = $element.offset().top;
-//             var element_bottom_position = (element_top_position + element_height);
+    if ($animateElement) {
+        $.each($animateElement, function () {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
     
-//             //check to see if this current container is within viewport
-//             if ((element_bottom_position >= window_top_position) &&
-//                 (element_top_position <= window_bottom_position)) {
-//                 $element.addClass("vis");
-//             }
-//             else {
-//                 $element.removeClass("vis");
-//             }
-//         });
-//     }
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+                $element.addClass("vis");
+            }
+            else {
+                $element.removeClass("vis");
+            }
+        });
+    }
     
-// }
+}
 
 // handles appearance of back to top button on bottom; if window scrolled to top, back to top is invisible
 $window.scroll(function () {
@@ -50,9 +51,9 @@ $(document).on("click",".back-to-top", function (e) {
 $(document).on('click', '.load' ,function(e){
     e.preventDefault();
 
-    $("#content").stop().animate({ opacity: 0, 'margin-top': '2em'}, 500, function () {
+    $("#content").animate({ opacity: 0, 'margin-top': '2em'}, 500, function () {
         $("#content").load(e.target.href, function () {
-            $("#content").animate({ opacity: 1, 'margin-top': '.5em'}, 500);
+            $("#content").animate({ opacity: 1, 'margin-top': '.5em'}, 500, inView());
             });
         });
 })
@@ -74,6 +75,6 @@ $(".links").click(function() {
 })
 
 // continually called to check if new elements should be animated in
-// $window.on("load", inView);
-// $window.on('scroll', inView);
-// $window.trigger('scroll');
+$window.on("load", inView);
+$window.on('scroll', inView).delay(100);
+$window.trigger('scroll');
