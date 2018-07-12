@@ -51,7 +51,7 @@ $(document).on("click",".back-to-top", function (e) {
 $(document).on('click', '.load' ,function(e){
     e.preventDefault();
 
-    $("#content").animate({ opacity: 0, 'margin-top': '2em'}, 500, function () {
+    $("#content").animate({ opacity: 0, 'margin-top': '4em'}, 500, function () {
         $("#content").load(e.target.href, function () {
             $("#content").animate({ opacity: 1, 'margin-top': '.5em'}, 500, inView());
             });
@@ -75,6 +75,6 @@ $(".links").click(function() {
 })
 
 // continually called to check if new elements should be animated in
-$window.on("load", inView);
+// $window.on("load", inView);
 $window.on('scroll', inView).delay(100);
 $window.trigger('scroll');

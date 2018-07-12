@@ -133,7 +133,7 @@ footer {
 }
 
 #content {
-    margin-top: 2em;
+    margin-top: 8em;
     opacity: 0;
 
     // forces position of scroll bar for contact page to avoid slight shift
@@ -214,11 +214,11 @@ footer {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     @include transition(500ms);
-    @include invisible_transform(25px);
+    @include invisible_transform(50px);
     
-    @include tablet {
-        @include invisible_transform(50px);
-    }
+    // @include tablet {
+    //     @include invisible_transform(50px);
+    // }
 }
 
 .vis {
