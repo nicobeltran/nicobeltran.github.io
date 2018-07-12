@@ -214,7 +214,7 @@ footer {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     @include transition(500ms);
-    @include invisible_transform(10px);
+    @include invisible_transform(50px);
 }
 
 .vis {

@@ -125,11 +125,11 @@ footer {
   -webkit-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
-  -moz-transform: translate3d(0px, 10px, 0px);
-  -webkit-transform: translate3d(0px, 10px, 0px);
-  -o-transform: translate(0px, 10px);
-  -ms-transform: translate(0px, 10px);
-  transform: translate3d(0px, 10px, 0px); }
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px); }
 
 .vis {
   opacity: 1;
