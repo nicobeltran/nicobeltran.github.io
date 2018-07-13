@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nico Beltran | Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nico Beltran's portfolio, made to showcase projects and other information about Nico Beltran.">
+
+    <!-- stylesheets -->
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- custom -->
+    <link href="/dist/styles/stylesheet.css" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <!-- dev icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-sm-12 text-center text-md-left">
+                        <a class="name-link links load" href="/dist/project-pages/projects.html">Nico Beltran</a>
+                    </div>
+
+                    <div class="col text-center text-md-right">
+                        <a class="default-link links load active-link" href="/dist/project-pages/projects.html">Projects</a>
+                    </div>
+                    <div class="col text-center text-md-right">
+                        <a class="links load" href="/dist/about.html">About</a>
+                    </div>
+                    <div class="col text-center text-md-right">
+                        <a class="links load" href="/dist/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content  -->
+    <section id="content">
+        <!-- Content goes in here  -->
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col text-center">
+                <div class="footer-text">
+                    <a href="/" class="back-to-top invisible">Back to top</a>
+                    <p class="copyright">&copy Nico Beltran 2018</p>
+                    <p>Last updated: July 10 2018</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="/dist/js/main.js"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $("#content").load("/dist/project-pages/projects.html", function () {
+                $("#content").animate({opacity: 1}, 1000, inView());
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>
