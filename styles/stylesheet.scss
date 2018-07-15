@@ -89,12 +89,15 @@ p {
 
 a {
     font-family: $lato;
-    font-size: 1.3em;
     text-decoration: none;
     color: black;
     font-family: $lato;
     font-weight: bold;
     @include transition(250ms);
+}
+
+.links {
+    font-size: 1.3em;
 }
 
 a:hover {
@@ -122,12 +125,17 @@ i {
 nav {
     // Positioning
     padding: 2em 0em;
+    
 
     @include tablet {
         padding: 3em 0em;
     }
 
 }
+
+// .project-link {
+//     display: block;
+// }
 
 figcaption {
     font-family: $rale;
@@ -158,12 +166,17 @@ footer {
 
 #content {
     // margin-top: 8em;
-    opacity: 0;
+    opacity: 1;
 
     // forces position of scroll bar for contact page to avoid slight shift
     width: 100%;
     min-height: 75vh;
 }
+
+.js-enabled {
+    opacity: 1;
+}
+
 
 .project {
     // Styling/Positioning
@@ -183,7 +196,6 @@ footer {
     color: white;
     text-shadow: black 0px 0px 50px;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,7 +206,8 @@ footer {
     p {
         margin-top: 10px;
         margin-bottom: 0;
-        font-weight: bold;
+        // font-weight: bold;
+
     }
 
     h1 {
@@ -240,9 +253,6 @@ footer {
     @include transition(500ms);
     @include invisible_transform(50px);
     
-    // @include tablet {
-    //     @include invisible_transform(50px);
-    // }
 }
 
 .vis {
@@ -255,9 +265,20 @@ footer {
 }
 
 .tagline {
-
+    // height: 75vh;
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    
     h1 {
-        // font-size: 2em;
+        @include tablet{
+            font-size: 2.5em;
+        }
+        @include pc {
+            margin: 1em 0em;
+            font-size: 3.2em;
+            
+        }
+        font-weight: bold;
     }
 }
 
