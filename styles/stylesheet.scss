@@ -165,18 +165,12 @@ footer {
 }
 
 #content {
-    // margin-top: 8em;
     opacity: 0;
 
     // forces position of scroll bar for contact page to avoid slight shift
     width: 100%;
     min-height: 75vh;
 }
-
-.js-enabled {
-    opacity: 0;
-}
-
 
 .project {
     // Styling/Positioning
