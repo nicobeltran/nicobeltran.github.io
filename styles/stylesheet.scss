@@ -88,7 +88,7 @@ h4 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2rem;
 }
 
 
@@ -105,7 +105,7 @@ a {
 }
 
 .links {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 a:hover {
@@ -123,11 +123,11 @@ a:hover {
 
 .link-no-bold {
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 i {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 nav {
@@ -269,7 +269,7 @@ footer {
 
 .tagline {
     // height: 75vh;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     font-size: 1.2em;
     
     h1 {
@@ -277,11 +277,7 @@ footer {
         @include tablet{
             font-size: 2.5em;
         }
-        @include pc {
-            margin: 1em 0em;
-            // font-size: 2em;
-            
-        }
+        
     }
 
 }
@@ -305,6 +301,10 @@ footer {
 
 #por-project {
     @include project_background('../imgs/portfolio_me.jpg')
+}
+
+#lcc-project {
+    @include project_background('../imgs/lcc.png')
 }
 
 .about {
